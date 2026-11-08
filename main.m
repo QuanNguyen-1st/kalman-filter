@@ -11,7 +11,7 @@ w = [wx(:) wy(:) wz(:)];
 load ArsAccel
 a = [fx(:) fy(:) fz(:)];
 
-A = eye(4); # initial A, will change in loop
+A = eye(4); % initial A, will change in loop
 H = eye(4);
 Q = 0.0001 * eye(4);
 R = 10 * eye(4);
