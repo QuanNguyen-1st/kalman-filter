@@ -58,16 +58,20 @@ plot(t, PhiSaved)
 title('Roll')
 xlabel('time (s)'); ylabel('Roll, \phi (degrees)')
 grid on
-ylim(40 * [-1 1]); xlim([0 420]);
-set(gca, 'fontsize', 18)
+ylim(40 * [-1 1]); 
+xlim([0 420]);
+axis square
+set(gca, 'fontsize', 15)
 
 subplot(1, 3, 2)
 plot(t, ThetaSaved)
 title('Pitch')
 xlabel('time (s)'); ylabel('Pitch, \theta (degrees)')
 grid on
-ylim(40 * [-1 1]); xlim([0 420]);
-set(gca, 'fontsize', 18)
+ylim(40 * [-1 1]); 
+xlim([0 420]);
+axis square
+set(gca, 'fontsize', 15)
 
 subplot(1, 3, 3)
 plot(t, PsiSaved, 'k', 'linewidth', 1);
@@ -75,6 +79,7 @@ title('Yaw')
 xlabel('time (s)'); ylabel('Yaw, \psi (degrees)')
 grid on
 xlim([0 420]);
-set(gca, 'fontsize', 18)
+axis square
+set(gca, 'fontsize', 15)
 
-set(gcf, 'Position', [10, 100, 1200, 500])
+set(gcf, 'Position', [10, 100, 1500, 600])
